@@ -12,3 +12,8 @@ class ServiceSerializer(serializers.ModelSerializer):
         model = Service
         fields = ('id', 'country', 'city', 'seller', 'service', 'created_at')
         read_only_fields = ('created_at', )
+
+class ProductosSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = RochaProductos
+        fields = '__all__'
