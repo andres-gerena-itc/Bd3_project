@@ -17,7 +17,6 @@ class Service(models.Model):
     def __str__(self):
         return f"{self.service} - {self.city}, {self.country}"
     
-
 class RochaProductos(models.Model):
     id = models.AutoField(primary_key=True)
     nombre = models.CharField(max_length=255)
